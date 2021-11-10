@@ -1,0 +1,12 @@
+package com.spring.common;
+
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Service;
+
+@Service
+public class LogAdvice {
+	@Pointcut("excution(* com.spring..*Impl.*(..))")
+	public void allPointcut() {}
+	@Pointcut("excution(* com.spring..*Impl.get*(..))")
+	public void getPointcut() {}
+}

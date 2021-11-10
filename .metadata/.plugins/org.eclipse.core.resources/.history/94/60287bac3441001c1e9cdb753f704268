@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.deptdao.DeptMapper">
+	<resultMap type="com.spring.deptvo.DeptVO" id="deptVO">
+		<result property="deptid" column="Dept_ID"></result>
+		<result property="deptname" column="Dept_NAME"></result>
+		<result property="depttel" column="Dept_Tel"></result>
+	</resultMap>
+
+	<select id="selectDepartment" parameterType="java.lang.String" resultType="deptVO">
+		SELECT Dept_ID
+		,Dept_NAEM
+		,Dept_Tel
+		FROM DEPARTMENT
+		WHERE DEPT_ID = #{deptid}
+	</select>
+	
+	<insert id="insertDepartment" parameterType="com.spring.deptvo.DeptVO">
+		insert into department
+		(dept_id,dept_name,dept_tel)
+		values
+		(#{deptid},#{deptname},#{depttel})
+	</insert>
+	
+	<update id="updateDepartment" parameterType="com.spring.deptvo.DeptVO">
+		update department
+		set dept_name =#{deptname},
+			dept_tel =#{depttel} 
+		WHERE DEPT_ID = #{deptid}
+	</update>
+
+	<resultMap type="#modelname" id="YourResultSet">
+		<id property="param1" column="columnname1" />
+		<result property="param2" column="columnname2" />
+		<result property="param3" column="columnname3" />
+	</resultMap>
+
+	<select id="getAll" resultMap="YourResultSet">
+		SELECT * FROM tablename1
+	</select>
+
+	<insert id="insertSomething" parameterType="#modelname">
+		INSERT INTO tablename1 (columnname1, columnname2, columnname3)
+		VALUES(#{value1},#{value2},#{value3})
+	</insert>
+
+	<update id="updateSomething" parameterType="#modelname">
+		UPDATE tablename1
+		SET
+		columnname1=#{param1}
+		WHERE
+		columnname2 = #{param2}
+	</update>
+
+	<delete id="deleteSomething" parameterType="int">
+		DELETE FROM tablename1 WHERE
+		columnname1 = #{param1}
+	</delete>
+
+</mapper>

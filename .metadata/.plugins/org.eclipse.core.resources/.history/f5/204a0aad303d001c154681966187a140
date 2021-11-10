@@ -1,0 +1,11 @@
+package com.spring.product;
+
+public class TVUSer {
+	public static void main(String[] args) {
+		LGUTV tv = new LGUTV();
+		tv.powerOff();
+		tv.volumeDown();
+		tv.volumeUp();
+		tv.powerOn();
+	}
+}

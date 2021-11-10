@@ -1,0 +1,10 @@
+package com.spring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(value="/lesson")
+public class LessonController {
+	private static final String CONTEXT_PATH="lesson";
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=springExam/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.product{TV.java[TV" modifiers="513" timestamp="1636003131634"/>
+    <typeInfo handle="=springExam/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.product{Speaker.java[Speaker" modifiers="513" timestamp="1636078244703"/>
+    <typeInfo handle="=springboard/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.user{UserService.java[UserService" modifiers="513" timestamp="1636100197093"/>
+    <typeInfo handle="=SpringMyBatisExam/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.deptservice{DeptService.java[DeptService" modifiers="513" timestamp="1636443502433"/>
+    <typeInfo handle="=SpringMyBatisExam/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.deptdao{DeptMapper.java[DeptMapper" modifiers="513" timestamp="1636443978973"/>
+    <typeInfo handle="=SpringMyBatisExam/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.lessonservice{LessonService.java[LessonService" modifiers="513" timestamp="1636521525163"/>
+    <typeInfo handle="=SpringMyBatisExam/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.lessondao{LessonMapper.java[LessonMapper" modifiers="513" timestamp="1636522058586"/>
+</typeInfoHistroy>

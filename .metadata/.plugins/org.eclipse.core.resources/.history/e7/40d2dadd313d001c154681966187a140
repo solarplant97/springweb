@@ -1,0 +1,18 @@
+package com.spring.product;
+
+import java.util.Scanner;
+
+import org.junit.Test;
+
+public class TVUSer {
+		@Test
+		public void TvTest() {
+		Scanner scan = new Scanner(System.in);
+		TV tv = new SamsungUTV();
+		tv.powerOff();
+		tv.volumeDown();
+		tv.volumeUp();
+		tv.powerOn();
+	}
+}
+

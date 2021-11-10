@@ -1,0 +1,15 @@
+package com.spring.product;
+
+import org.junit.Test;
+
+public class TVUSer {
+		@Test
+		public void TvTest() {
+		TV tv = new SamsungUTV();
+		tv.powerOff();
+		tv.volumeDown();
+		tv.volumeUp();
+		tv.powerOn();
+	}
+}
+

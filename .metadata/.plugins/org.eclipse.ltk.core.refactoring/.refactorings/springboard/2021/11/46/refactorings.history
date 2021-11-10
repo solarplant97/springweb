@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.spring.user.impl.UserServicempl&apos; to &apos;UserServiceImpl&apos;&#x0D;&#x0A;- Original project: &apos;springboard&apos;&#x0D;&#x0A;- Original element: &apos;com.spring.user.impl.UserServicempl&apos;&#x0D;&#x0A;- Renamed element: &apos;com.spring.user.impl.UserServiceImpl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UserServicempl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.user.impl{UserServicempl.java[UserServicempl" matchStrategy="1" name="UserServiceImpl" qualified="false" references="true" similarDeclarations="false" stamp="1636332708263" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,6 @@
+package com.spring.board;
+
+public class OracleJDBCConnectionTest {
+	private static final String DRIVER = "oracle.jdbc.OracleDriver";
+	private static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
+}

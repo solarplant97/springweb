@@ -1,0 +1,31 @@
+package com.spring.board;
+
+import java.util.List;
+
+import org.junit.Test;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class BoardServiceClient {
+	
+	@Test
+	public void boardTest() {
+		AbstractApplicationContext container =
+				new GenericXmlApplicationContext("applicationContext.xml");
+		
+		BoardService boardService = (BoardService) container.getBean("boardService");
+		BoardVO vo = new BoardVO();
+		vo.setTitle("테스트 제목");
+		vo.setWriter("홍길동");
+		vo.setContent("내용 테스트");
+		boardService.insertBoard(vo);
+		
+		List<BoardVO> boardList = boardService.getBoardList(vo);
+		for(BoardVO board : boardList) {
+			System.out.println("결과 : " + board.toString());
+			
+		}
+		container.close();
+	}
+}

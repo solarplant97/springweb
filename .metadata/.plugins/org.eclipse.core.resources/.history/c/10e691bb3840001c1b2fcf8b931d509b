@@ -1,0 +1,16 @@
+package com.spring.common;
+
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Service;
+
+@Service
+public class LogAdvice {
+	@Pointcut("excution(* com.spring..*Impl.*(..))")
+	public void allPointcut() {}
+	@Before("allPointcut()")
+	public void printLog() {
+		System.out.println("[아노테이션 공통 로그]비즈니스 로직 수행 전 동작");
+	}
+	
+}

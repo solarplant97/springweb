@@ -1,0 +1,14 @@
+package com.spring.board;
+
+import org.junit.Test;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericApplicationContext;
+
+public class BoardServiceClient {
+	
+	@Test
+	public void boardTest() {
+		AbstractApplicationContext container =
+				new GenericApplicationContext("applicationContext.xml");
+	}
+}

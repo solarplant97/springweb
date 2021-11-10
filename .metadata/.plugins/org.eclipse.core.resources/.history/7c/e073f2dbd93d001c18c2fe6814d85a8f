@@ -1,0 +1,14 @@
+package com.spring.product;
+
+import org.junit.Test;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class TVUserEX {
+	@Test
+	public void TvTestEX() {
+		TV tv1 = new SamsungUTV();
+		TV tv2 = new SamsungUTV();
+		TV tv3 = new SamsungUTV();
+	}
+}

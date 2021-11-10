@@ -1,0 +1,20 @@
+package com.spring.board.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import org.springframework.stereotype.Repository;
+
+@Repository("boardDAO")
+public class BoardDAO {
+	private Connection conn =null;
+	private PreparedStatement stmt= null;
+	private ResultSet rs = null;
+	
+	private final String BOARDEX_INSERT = "insert into boardex(seq,title,writer,content)values((select nvl(max(seq),0)+1 from boardex),?,?,?)";
+	private final String BOARDEX_DELEDTE ="delete boardex where seq=?";
+	private final String BOARDEX_UPDATE ="update boardex set title=?,content=?,where seq=?";
+	private final String BOARDEX_GET ="select * from boardex where seq=?";
+	private final String BOARDEX_LIST ="select * from boardex order by seq desc";
+}

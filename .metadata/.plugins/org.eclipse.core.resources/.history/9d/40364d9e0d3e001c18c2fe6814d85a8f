@@ -1,0 +1,14 @@
+package com.spring.user.impl;
+
+import com.spring.user.UserService;
+import com.spring.user.UserVO;
+
+public class UserServicempl implements UserService {
+
+	@Override
+	public UserVO getUser(UserVO vo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
